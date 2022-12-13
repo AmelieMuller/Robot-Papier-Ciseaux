@@ -9,8 +9,8 @@ Cahier des charges :
    * faire réaliser aléatoirement un mouvement entre pierre papier et ciseaux
  
  * capter et analyser les mouvements de l'utilisateur grâce à un gant connecté
-  * créer un gant muni de potentiomètres
-  * reconnaître les mouvements pierre papier et ciseaux faits par l'utilisateur
+    * créer un gant muni de potentiomètres
+    * reconnaître les mouvements pierre papier et ciseaux faits par l'utilisateur
  
 * déduire l'issu de la partie en comparant les deux mouvements
   
