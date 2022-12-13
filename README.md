@@ -2,7 +2,7 @@
 Système permettant de jouer à pierre papier ciseaux contre un bras robotisé. 
 
 
-Cahier des charges : 
+Cahier des charges :
  -faire bouger la main robotisée afin de reproduire les mouvements pierre papier et ciseaux
   -fabriquer la main
   -la faire bouger
