@@ -27,24 +27,23 @@ void loop() {
   valAnulaire = analogRead(anulaire);
   valPetitDoigt = analogRead(petitDoigt);
 
-
   //Puis on envoie ce que l'utilisateur fait
   
- if( (valPouce>700)&&(valPetitDoigt>700)&&(valIndex>675)&&(valMajeur>700)&&(valAnulaire>800) ){
+ if( (valPouce>625)&&(valPetitDoigt>650)&&(valIndex>675)&&(valMajeur>700)&&(valAnulaire>800) ){
       Serial.write("P"); //Le gant envoie que le joueur fait Pierre
   }
-  else if ( (valAnulaire>800)&&(valIndex<675)&&(valMajeur<700)&&(valPetitDoigt>700) ){
+  else if ( (valAnulaire>800)&&(valIndex<675)&&(valMajeur<700)&&(valPetitDoigt>650) ){
       Serial.write("C"); //Le gant envoie que le joueur fait CIseaux
   }
-  else if ( (valIndex<675)&&(valMajeur<700)&&(valAnulaire<800)&&(valPouce<700)&&(valPetitDoigt<700) ){
+  else if ( (valIndex<675)&&(valMajeur<700)&&(valAnulaire<800)&&(valPouce<625)&&(valPetitDoigt<650) ){
       Serial.write("F"); //Le gant envoie que le joueur fait feuille
   }
-  else if ((valPouce<700)&&(valIndex>675)&&(valMajeur>700)&&(valAnulaire>800)&&(valPetitDoigt<700)){
+  else if ((valPouce<625)&&(valIndex>675)&&(valMajeur>700)&&(valAnulaire>800)&&(valPetitDoigt<650)){
       Serial.write("S"); //Le gant envoie que le joueur fait le signe pour démarrer
   }
 
   else{
       Serial.write("I"); //Le gant envoie que le joueur fait un signe inconnu
   }
-  delay(100);
+  delay(150);
 }
